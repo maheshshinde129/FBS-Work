@@ -1,0 +1,15 @@
+// Print a solid square pattern Input: n = 4
+
+#include<stdio.h>
+int main() {
+
+    for(int row=1;row<5;row++)
+    {
+        for(int col=1;col<5;col++)
+        {
+            printf(" * ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
