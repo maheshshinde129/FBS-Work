@@ -1,0 +1,22 @@
+// Print prime numbers in the given range 1 to n.
+
+#include<stdio.h>
+int main() {
+    int num;
+    printf("Enter number:-");
+    scanf("%d",&num);
+    int sum;
+    for(int i=1; i<=num; i++) {
+        sum = 0;
+        for(int j=1; j<i; j++) {
+            if(i%j==0){
+                sum++;
+            }
+        }
+        if(sum==1) {
+            printf("%d\n",i);
+        }
+        
+    }
+    return 0;
+}
